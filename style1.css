@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.title {
+    font-size: 36px;
+    animation: slide-in 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+nav {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #bbb;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.mode-toggle input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.mode-toggle label {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mode-toggle label:after {
+    content: 'Mode Gelap';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.mode-toggle input:checked + label {
+    background-color: #2196F3;
+}
+
+.mode-toggle input:checked + label:after {
+    left: calc(100% - 90px);
+}
+
+/* Efek Scrolling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode li,
+.dark-mode a {
+    color: #fff;
+}
+
+section ul li {
+    margin-bottom: 5px;
+}
+
+section pre code {
+    padding: 10px;
+}

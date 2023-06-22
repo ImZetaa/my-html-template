@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutorial HTML</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Tutorial HTML</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Pendahuluan</a></li>
+            <li><a href="#basic-syntax">Syntax Dasar</a></li>
+            <li><a href="#tags">Tag HTML</a></li>
+            <li><a href="#attributes">Atribut</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="introduction" class="fade-in">
+            <h2>Pendahuluan</h2>
+            <p>HTML (Hypertext Markup Language) adalah bahasa pemrograman yang digunakan untuk membuat struktur dan konten dari halaman web. Dalam pengembangan web, HTML berperan sebagai tulang punggung yang mendefinisikan elemen-elemen dasar dan hubungan antara mereka.</p>
+            <p>Did you know? HTML telah ada sejak tahun 1990 dan merupakan salah satu teknologi inti yang membentuk World Wide Web (WWW). Awalnya, HTML hanya memiliki versi dasar, tetapi seiring waktu, telah mengalami perkembangan yang signifikan dan saat ini digunakan dalam versi HTML5 yang memiliki banyak fitur canggih dan kemampuan multimedia.</p>    
+            <p>Selain itu, HTML juga merupakan bahasa yang mudah dipelajari. Dengan pengetahuan dasar HTML, Anda dapat membuat struktur dasar halaman web dan menambahkan elemen-elemen seperti teks, gambar, tautan, dan daftar. Kemudian, Anda dapat mengkombinasikan HTML dengan CSS (Cascading Style Sheets) dan JavaScript untuk menciptakan tampilan dan interaktivitas yang lebih dinamis.</p>            
+            <p>Dalam tutorial ini, kita akan menjelajahi dasar-dasar HTML, termasuk sintaks dasar, tag HTML umum, penggunaan atribut, dan banyak lagi. Mari kita mulai mempelajari HTML dan membuka pintu ke dunia pengembangan web!</p>        </section>
+        <section id="basic-syntax" class="fade-in">
+            <h2>Syntax Dasar</h2>
+            <p>Contoh elemen HTML:</p>
+            <pre>
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Ini adalah judul halaman&lt;/h1&gt;
+    &lt;p&gt;Ini adalah paragraf.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section id="tags" class="fade-in">
+            <h2>Tag HTML</h2>
+            <p>Ini adalah daftar beberapa tag HTML yang umum digunakan:</p>
+            <ul>
+                <li>&lt;h1&gt; - &lt;h6&gt;: Judul</li>
+                <li>&lt;p&gt;: Paragraf</li>
+                <li>&lt;a&gt;: Tautan</li>
+                <li>&lt;img&gt;: Gambar</li>
+                <li>&lt;ul&gt; dan &lt;li&gt;: Daftar tak-berurutan</li>
+                <li>&lt;ol&gt; dan &lt;li&gt;: Daftar berurutan</li>
+                <li>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;: Tabel</li>
+            </ul>
+        </section>
+
+        <section id="attributes" class="fade-in">
+            <h2>Atribut</h2>
+            <p>Contoh penggunaan atribut:</p>
+            <pre>
+                <code>
+&lt;a href="https://www.example.com"&gt;Tautan ke contoh.com&lt;/a&gt;
+&lt;img src="gambar.jpg" alt="Deskripsi gambar"&gt;
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sel&nbsp;1&lt;/td&gt;
+        &lt;td&gt;Sel&nbsp;2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </code>
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hak Cipta &copy; 2023 Tutorial HTML</p>
+    </footer>
+
+    <div class="mode-toggle">
+        <input type="checkbox" id="toggle-checkbox">
+        <label for="toggle-checkbox"></label>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
